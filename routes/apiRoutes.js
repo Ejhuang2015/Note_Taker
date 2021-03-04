@@ -32,7 +32,6 @@ router.post("/notes", async (req, res) => {
         }
         dbData.push(newNote);
         console.log(dbData);
-        // Notes.addNote(req.body.title,req.body.text);
         res.json(dbData);
     } catch (err) {
         res.status(500).end();
@@ -46,12 +45,14 @@ router.delete("/notes/:id", (req, res) => {
     console.log(noteIndex);
     try {
         dbData.splice(noteIndex,1);
-        // Notes.deleteNote(req.params.id)
         res.json(dbData);
     } catch (err) {
         res.status(500).end();
     }
 });
+
+// Questions!
+// Why doesn't the "Write new note" button allow me to write a new note
 
 // Exports
 // =============================================================
