@@ -22,15 +22,15 @@ router.get("/notes", (req, res) => {
 });
 // Edit the JSON file with the new note
 router.post("/notes", async (req, res) => {
+    // Create the new note
+    let newNote = 
+    {
+        title: req.body.title,
+        text: req.body.text,
+        id: uuidv4(),
+    }
     try {
-        const newID = uuidv4();
-        let newNote = {
-            title: req.body.title,
-            text: req.body.text,
-            id: newID,
-        }
         dbData.push(newNote);
-        console.log(dbData);
         res.json(dbData);
     } catch (err) {
         res.status(500).end();
@@ -38,10 +38,10 @@ router.post("/notes", async (req, res) => {
 });
 // Delete the note with the specified UUID
 router.delete("/notes/:id", (req, res) => {
+    // Find the index value of the object with matching ids
     let noteIndex = dbData.findIndex( element => {
         return element.id == req.params.id
     });
-    console.log(noteIndex);
     try {
         dbData.splice(noteIndex,1);
         res.json(dbData);
