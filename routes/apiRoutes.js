@@ -2,8 +2,6 @@
 // =============================================================
 // Express router functions
 const router = require("express").Router();
-// Allows the ability to write and read files etc.
-const fs = require('fs');
 // Allows the generation of unique ids
 const { v4: uuidv4 } = require('uuid');
 // Get access to the database file
