@@ -1,7 +1,17 @@
 [
     {
-        "title":"Testing note title",
-        "text":"Test text",
+        "title":"Test note 1",
+        "text":"Test text 1",
+        "id":"42722ef7-050c-4031-957c-6fbe6ac3b5ae"
+    },
+    {
+        "title":"Test note 2",
+        "text":"Test text 2",
         "id":"42722ef7-050c-4031-957c-6fbe6ac3b5be"
+    },
+    {
+        "title":"test note 3",
+        "text":"Test text 3",
+        "id":"42722ef7-050c-4031-957c-6fbe6ac3b5ce"
     }
 ]
