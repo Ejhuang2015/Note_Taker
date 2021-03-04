@@ -6,8 +6,7 @@ const router = require("express").Router();
 const fs = require('fs');
 // Allows the generation of unique ids
 const { v4: uuidv4 } = require('uuid');
-// Get access to the Notes class to add, delete, and edit notes
-const Notes = require('../lib/Notes');
+// Get access to the database file
 const dbData = require('../db/db');
 
 // API routes
