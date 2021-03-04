@@ -48,8 +48,10 @@ router.delete("/notes/:id", (req, res) => {
     }
 });
 
-// Questions!
-// Why doesn't the "Write new note" button allow me to write a new note
+// To do:
+// Add the readme
+// Create video
+// Add to Heroku
 
 // Exports
 // =============================================================
