@@ -48,11 +48,6 @@ router.delete("/notes/:id", (req, res) => {
     }
 });
 
-// To do:
-// Add the readme
-// Create video
-// Add to Heroku
-
 // Exports
 // =============================================================
 module.exports = router;
